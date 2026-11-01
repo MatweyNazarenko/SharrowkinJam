@@ -1,0 +1,14 @@
+.character-selection { margin-top: 32px; }
+.character-selection h2 { margin-bottom: 8px; }
+.character-selection > p { color: var(--muted); line-height: 1.6; }
+.character-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.character-option { text-align: left; display: flex; flex-direction: column; padding: 20px; background: var(--panel); border-color: var(--line); }
+.character-option[aria-pressed="true"] { border-color: var(--accent); background: #302219; }
+.character-option .portrait { height: 140px; color: #eda56e; }
+.character-option strong { font-size: 23px; margin: 10px 0; }
+.character-option .character-role { display: flex; justify-content: space-between; color: var(--accent); font-size: 12px; gap: 12px; }
+.character-option p { color: #c8b7a9; line-height: 1.6; font-size: 14px; flex: 1; }
+.character-option small { color: var(--accent); }
+.hero-summary { padding: 14px 18px; border-left: 2px solid var(--accent); color: #c8b7a9; background: var(--panel); line-height: 1.6; margin-top: 18px; font-size: 14px; }
+.hero-summary strong { color: #fff0e3; }
+@media(max-width:650px) { .character-grid { grid-template-columns: 1fr; } .character-option { position: relative; padding-right: 110px; } .character-option .portrait { position: absolute; right: 0; top: 45px; width: 105px; } }
